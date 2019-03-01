@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ge_user -查询表格</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../core/js/layui/css/layui.css" media="all">
+</head>
+<body>
+
+<button class="layui-btn layui-bg-red layui-btn-sm" id="btnAddGeUser">
+<i class="layui-icon">&#xe654;</i>Add</button>
+<table class="layui-hide" id="geUserTable" lay-filter="tableFilter"></table>
+
+</body>
+
+
+
+    <button class="layui-btn layui-btn-normal layui-btn-sm" lay-event="detail"><i class="layui-icon">&#xe615;</i></button>
+    <button class="layui-btn layui-btn-normal layui-btn-sm" lay-event="edit"><i class="layui-icon">&#xe642;</i></button>
+    <button class="layui-btn layui-btn-normal layui-btn-sm" lay-event="del"><i class="layui-icon">&#xe640;</i></button>
+
+
+
+<script src="../../core/js/layui/layui.js" charset="utf-8"></script>
+<script src="../../core/js/jquery-1.9.0.min.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/geUser/queryGeUserList.js" charset="utf-8"></script>
+
+<script >
+$("#btnAddGeUser").on("click", function(){
+    layui.addGeUserData() ;
+
+}  );
+
+</script>
+
+</html>

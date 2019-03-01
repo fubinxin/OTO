@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ge_certified_user -查询表格</title>
+
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+
+    <button class="layui-btn layui-bg-red layui-btn-sm btnAdd" id="btnAddGeCertifiedUser">
+        <i class="layui-icon">&#xe654;</i>添加</button>
+    <button class="layui-btn layui-btn-normal layui-btn-sm btnAdd" id="btnDelGroup">
+        <i class="layui-icon">&#xe640;</i>批量删除</button>
+    <button class="layui-btn layui-btn-normal layui-btn-sm btnAdd" id="btnImport">
+       Excel导入
+    </button>
+    <table class="layui-hide" id="geCertifiedUserTable" lay-filter="tableFilter"></table>
+	
+</body>
+<!--Operating-->
+<script type="text/html" id="barDemo">
+    <button class="layui-btn layui-btn-normal layui-btn-sm" lay-event="bindP">
+        <i class="layui-icon layui-icon-auz"></i>
+    </button>
+    <button class="layui-btn layui-btn-normal layui-btn-sm" lay-event="edit">
+        <i class="layui-icon">&#xe642;</i>
+    </button>
+    <button class="layui-btn layui-btn-normal layui-btn-sm" lay-event="del">
+        <i class="layui-icon">&#xe640;</i>
+    </button>
+</script>
+
+<!--entryTime-->
+<script type="text/html" id="entryTime">
+    <div>{{formatDate(d.entryTime)}}</div>
+</script>
+
+<!--validTime-->
+<!--<script type="text/html" id="validTime">
+    <div>{{formatDate(d.validTime)}}</div>
+</script>-->
+
+<!--createTime-->
+<script type="text/html" id="createTime">
+    <div>{{formatDate(d.createTime)}}</div>
+</script>
+
+<!--areaTemplet-->
+<script type="text/html" id="areaTemplet">
+	{{# var pId=(d.area).split(' ')[0];var cId=(d.area).split(' ')[1]; }}
+	<div>{{ fn(pId)+' '+fn(cId) }}</div>
+</script>
+
+<!--<script src="../js/geCertifiedUser/queryGeCertifiedUserList.min.js" charset="utf-8"></script>-->
+<script src="../js/geCertifiedUser/queryGeCertifiedUserList.js" charset="utf-8"></script>
+<script>
+
+ $("#btnImport").click(function(){
+
+
+	    layer.open({
+	        type: 1 
+	        ,title: '文件导入'
+	        ,area: ['50%', '360px']
+	        ,shade: 0
+	        ,closeBtn: 0
+	        ,shadeClose: false
+	        ,content: '<div style="padding:10px 20px;">提示：因格式需求，需要您下载'
+	        +'一个Excel模板,然后上传文件；若您已有模板请直接上传文件。'
+	        +'<br/><input id="importExcel" name="excel"style="margin-top:30px;" type="file" /></div>'
+	        ,btn: ['下载', '上传', '取消'] 
+            , btn1: function () {
+                //下载
+			    location.href = addr + "/file/downExcelTemp";
+	        }
+
+            , btn2: function () {
+                var file = $("#importExcel")[0].files[0];
+                if (file == null || file == "" || file == undefined){
+                    layer.msg('请上传正确的文件格式的非空文件！');
+                    return false;
+                }
+				var formData = new window.FormData();
+                formData.append("excel", file);
+
+				$.ajax({
+					url: addr + "/file/importExcel",
+                    type: "post",
+                    async: true,
+                    data: formData,
+                    dataType: 'json',
+			        processData: false,       //必不可缺
+			        contentType: false,     //必不可缺
+					success: function (res) {
+                        if (res.status === 200) {
+					    	layer.msg('上传成功！');
+
+                        } else if (res.status === 505) {
+                            layer.open({
+                                title: '提示'
+                                , content: res.msg
+                            });
+
+                        } else {
+                            layer.msg('上传未知错误！');
+					    	 		}
+					    	 },
+				});
+
+			}
+            , btn3: function () {
+	        	//取消上传，清空
+	          //layer.closeAll();
+	        }
+
+            , zIndex: layer.zIndex
+	       
+	      });
+
+
+    })
+
+    $("#btnAddGeCertifiedUser").on("click", function () {
+        layui.addGeCertifiedUserData();
+    });
+</script>
+</html>

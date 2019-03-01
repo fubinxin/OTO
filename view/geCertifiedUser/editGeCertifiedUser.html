@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>edit</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../core/js/layui/css/layui.min.css" media="all">
+    <link rel="stylesheet" href="../../sass/sysview/index.css">
+    <!--<link rel="stylesheet" href="../../css/geCertifiedUser/index.min.css">-->
+    <link rel="stylesheet" href="../../css/geCertifiedUser/index.css">
+    
+</head>
+
+<body>
+    <form class="layui-form certUserForm" action="" lay-filter="certUserForm">
+        <div class="formItemGroup">
+            <input id="id" name="id" hidden="hidden" />
+
+            <div class="layui-form-item">
+                <label id="name_label" class="layui-form-label">姓名</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="name" name="name" lay-verify="required" autocomplete="off" class="layui-input" lay-verify="required">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label id="headUrl_label" class="layui-form-label">头像</label>
+                <div class="layui-input-inline">
+                	<p style="color:#888888;">请上传120px x 80px 大小的图片。</p>
+                    <input type="text" id="headUrl" name="headUrl" lay-verify="required" autocomplete="off" class="layui-input" lay-verify="required">
+                </div>
+                <div class="layui-input-inline">
+                    <img style="width: 120px;height: 80px;" class="previewImg" />
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label id="level_label" class="layui-form-label">等级</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="level" name="level" lay-verify="required" autocomplete="off" class="layui-input" lay-verify="required">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label id="organization_label" class="layui-form-label">所属医院/机构</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="organization" name="organization" lay-verify="required" autocomplete="off" class="layui-input" lay-verify="required">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label id="entryTime_label" class="layui-form-label">入职时间</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="entryTime" name="entryTime" lay-verify="required" placeholder="请输入入职时间" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <!--<div class="layui-form-item">
+                <label id="validTime_label" class="layui-form-label">有效时间</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="validTime" name="validTime" lay-verify="required" placeholder="请输入有效时间" autocomplete="off" class="layui-input">
+                </div>
+            </div>-->
+
+            <div class="layui-form-item">
+                <label id="area_label" class="layui-form-label">地区和城市</label>
+                <div class="layui-input-block">
+                    <select id="province" name="province" lay-verify="required" lay-filter="province">
+                        <option value="">--请选择地区--</option>
+                    </select>
+                    <select id="city" name="city" lay-verify="required" lay-filter="city">
+                        <option value="">--请选择城市--</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label id="mobile_label" class="layui-form-label">手机号码</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="mobile" name="mobile" lay-verify="required|phone" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+						
+            <div class="btnGroup">
+                <button id="editConfirm" class="layui-btn layui-btn-normal upload" lay-submit="" lay-filter="editbtn">确认</button>
+
+                <button id="editCancel" type="layui-btn" class="layui-btn layui-btn-primary">取消</button>
+            </div>
+        </div>
+    </form>
+</body>
+<!--<script src="../../js/geCertifiedUser/area.min.js"></script>-->
+<script src="../../core/js/jquery-1.9.0.min.js"></script>
+<script src="../../core/js/layui/layui.min.js" charset="utf-8"></script>
+
+<script src="../../js/common.js"></script>
+<!-- <script src="../../js/redir.js"></script> -->
+<script src="../../js/sysview/index.js"></script>
+<!--<script src="../../js/geCertifiedUser/editGeCertifiedUser.min.js"></script>-->
+<script src="../../js/geCertifiedUser/editGeCertifiedUser.js"></script>
+
+<script type="text/javascript">
+    edit.init()
+</script>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>edit</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../core/js/layui/css/layui.min.css" media="all">
+    <link rel="stylesheet" href="../../sass/sysview/index.css">
+    <!--<link rel="stylesheet" href="../../css/geCertifiedProduct/index.min.css" />-->
+    <link rel="stylesheet" href="../../css/geCertifiedProduct/index.css" />
+</head>
+
+<body>
+    <div class="layui-form" action="">
+        <div class="formItemGroup">
+            <input id="id" name="id" hidden="hidden" />
+            <div class="layui-form-item">
+                <label id="category_label" class="layui-form-label">分类</label>
+                <div class="layui-input-inline">
+                    <select id="category" name="category" autocomplete="off" class="layui-input" lay-verify="required">
+                        <option>请选择产品分类</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label id="name_label" class="layui-form-label">产品名称</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="name" name="name" autocomplete="off" autofocus="autofocus" class="layui-input" lay-verify="required">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label id="description_label" class="layui-form-label">介绍</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="description" name="description" autocomplete="off" class="layui-input" lay-verify="required">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label id="imgurl_label" class="layui-form-label">产品图片Url</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="imgurl" name="headUrl" autocomplete="off" class="layui-input" lay-verify="required">
+                </div>
+                <div class="layui-input-inline">
+                    <img class="previewImg" />
+                </div>
+            </div>
+
+            <div class="btnGroup">
+                <button id="editConfirm" class="layui-btn layui-btn-normal" lay-submit="" lay-filter="editbtn">确认</button>
+                <button id="editCancel" type="layui-btn" class="layui-btn layui-btn-primary">取消</button>
+            </div>
+        </div>
+    </div>
+</body>
+	
+<script src="../../core/js/jquery-1.9.0.min.js"></script>
+
+<script src="../../core/js/layui/layui.min.js" charset="utf-8"></script>
+
+<script src="../../js/common.js"></script>
+<!-- <script src="../../js/redir.js"></script> -->
+<script src="../../js/sysview/index.js"></script>
+<!--<script src="../../js/geCertifiedProduct/editGeCertifiedProduct.min.js"></script>-->
+<script src="../../js/geCertifiedProduct/editGeCertifiedProduct.js"></script>
+
+<script type="text/javascript">
+    edit.init()
+</script>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>add</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/core/js/layui/css/layui.css"  media="all">
+</head>
+<body>
+<form class="layui-form" action="">
+    <div>
+        <input id="id" name="id"  />
+
+                           
+                                          
+            <div class="layui-form-item">
+                <label id="imgPath_label" class="layui-form-label">新闻图片</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="imgPath" name="imgPath"  autocomplete="off" class="layui-input">
+                </div>
+            </div>
+                                        
+            <div class="layui-form-item">
+                <label id="title_label" class="layui-form-label">标题</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="title" name="title"  autocomplete="off" class="layui-input">
+                </div>
+            </div>
+                                        
+            <div class="layui-form-item">
+                <label id="content_label" class="layui-form-label">新闻内容</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="content" name="content"  autocomplete="off" class="layui-input">
+                </div>
+            </div>
+                                        
+            <div class="layui-form-item">
+                <label id="type_label" class="layui-form-label">类型(1、不滚动；2、图片滚动)</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="type" name="type"  autocomplete="off" class="layui-input">
+                </div>
+            </div>
+                                        
+            <div class="layui-form-item">
+                <label id="sort_label" class="layui-form-label">排序</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="sort" name="sort"  autocomplete="off" class="layui-input">
+                </div>
+            </div>
+                                        
+            <div class="layui-form-item">
+                <label id="createTime_label" class="layui-form-label">创建时间</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="createTime" name="createTime"  lay-verify="required" placeholder="please input createTime"  autocomplete="off" class="layui-input">
+                </div>
+            </div>
+                           
+        <div>
+            <button id="addConfirm" class="layui-btn layui-btn-normal" lay-submit="" lay-filter="addbtn">Confirm</button>
+            <button id="addCancel" type="layui-btn" class="layui-btn layui-btn-primary">Cancel</button>
+        </div>
+    </div>
+</form>
+</body>
+
+<script src="../../../core/js/jquery-1.9.0.min.js"></script>
+<script src="../../../core/js/i18next.js"></script>
+
+<script src="../../../js/jquery.cookie.min.js"></script>
+<script src="../../../js/language.init.js"></script>
+<script src="/core/js/layui/layui.js" charset="utf-8"></script>
+
+<script src="/js/common.js"></script>
+<script src="/js/geNews/editGeNews.js"></script>
+
+<script type="text/javascript">
+    add.init()
+</script>
+</html>
