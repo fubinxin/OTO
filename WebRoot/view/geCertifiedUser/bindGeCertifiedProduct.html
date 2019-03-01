@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>edit</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../core/js/layui/css/layui.min.css" media="all">
+    <link rel="stylesheet" href="../../sass/sysview/index.css">
+    <!--<link rel="stylesheet" href="../../css/geCertifiedUser/bindP.min.css" />-->
+    <link rel="stylesheet" href="../../css/geCertifiedUser/bindP.css" />
+</head>
+
+<body>
+    <div class="formItemGroup">
+        <input id="id" name="id" hidden="hidden" />
+        <button id="addProductBtn" class="layui-btn layui-btn-sm layui-btn-danger">
+            <span class="layui-icon layui-icon-add-1"></span> 添加</button>
+        <button id="editProductBtn" class="layui-btn layui-btn-sm layui-btn-normal">
+            <span class="layui-icon layui-icon-edit"></span> 编辑</button>
+        <button id="deleteProductBtn" class="layui-btn layui-btn-sm layui-btn-normal">
+            <span class="layui-icon layui-icon-delete"></span> 批量删除</button>
+        <table id="newProTable" class="layui-table layui-table-strip">
+            <tr>
+                <th>
+
+                </th>
+                <th>产品</th>
+                <th>有效期</th>
+            </tr>
+        </table>
+
+        <div class="btnGroup">
+            <button id="bindPConfirm" class="layui-btn layui-btn-normal" lay-submit="" lay-filter="bindPbtn">确认</button>
+
+            <button id="bindPCancel" type="layui-btn" class="layui-btn layui-btn-primary">取消</button>
+        </div>
+    </div>
+</body>
+<script src="../../core/js/jquery-1.9.0.min.js"></script>
+<script src="../../core/js/layui/layui.min.js" charset="utf-8"></script>
+
+<script src="../../js/common.js"></script>
+<!-- <script src="../../js/redir.js"></script> -->
+<script src="../../js/sysview/index.js"></script>
+<!--<script src="../../js/geCertifiedUser/bindPro.min.js"></script>-->
+<script src="../../js/geCertifiedUser/bindPro.js"></script>
+
+<script type="text/javascript">
+    bindP.init();
+    bindP.getLayDate();
+</script>
+
+</html>

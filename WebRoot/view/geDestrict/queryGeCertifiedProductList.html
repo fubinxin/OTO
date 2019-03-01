@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ge_certified_product -查询表格</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+
+    <button class="layui-btn layui-bg-red layui-btn-sm btnAdd" id="btnAddGeCertifiedProduct">
+        <i class="layui-icon">&#xe654;</i>添加</button>
+    <button class="layui-btn layui-btn-normal layui-btn-sm btnAdd" id="btnDelGroup">
+        <i class="layui-icon">&#xe640;</i>批量删除</button>
+    <table class="layui-hide" id="geCertifiedProductTable" lay-filter="tableFilter"></table>
+
+</body>
+<!--Operating-->
+<script type="text/html" id="barDemo">
+    <button class="layui-btn layui-btn-normal layui-btn-sm" lay-event="edit">
+        <i class="layui-icon">&#xe642;</i>
+    </button>
+    <button class="layui-btn layui-btn-normal layui-btn-sm" lay-event="del">
+        <i class="layui-icon">&#xe640;</i>
+    </button>
+</script>
+
+<!--createTime-->
+<script type="text/html" id="createTime">
+    <div>{{formatDate(d.createTime)}}</div>
+</script>
+
+<!--<script src="../js/geCertifiedProduct/queryGeCertifiedProductList.min.js" charset="utf-8"></script>-->
+<script src="../js/geDestrict/queryGeCertifiedProductList.js" charset="utf-8"></script>
+
+<script>
+    $("#btnAddGeCertifiedProduct").on("click", function () {
+        layui.addGeCertifiedProductData();
+    });
+</script>
+
+</html>

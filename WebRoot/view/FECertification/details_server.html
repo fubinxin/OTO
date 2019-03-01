@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../core/js/layui/css/layui.min.css" />
+	<!--<link rel="stylesheet" href="../../css/FECertification/details.min.css" />-->
+	<link rel="stylesheet" href="../../css/FECertification/details.css" />
+    <style>
+        /** 由于使用 wkhtmltox 下载pdf，css中不能使用 rem */
+        * {
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+    <title>工程师详情</title>
+</head>
+
+<body>
+
+    <!--<div class="layui-container-fluid">-->
+        <!--工程师详情-->
+        <div class="engineerD">
+            <!--top detail-->
+            <div class="topDetail">
+                <!--<div class="layui-row">
+                    <div class="layui-col-xs-offset11">
+                        <b class="btnClose">&times;</b>
+                    </div>
+                </div>-->
+                <div class="layui-row profile">
+                    <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12 pointer">
+                        <img id="profileImg" alt="Profile" />
+                    </div>
+                </div>
+                <div class="layui-row nameD">
+                    <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                        <b id="nameD"></b>
+                    </div>
+                </div>
+                <div class="layui-row locationD">
+                    <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                        <span id="locationD"></span>
+                    </div>
+                </div>
+                <div class="layui-row corpD">
+                    <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                        <span id="corpD"></span>
+                    </div>
+                </div>
+            </div>
+            <!--bottom detail-->
+            <div class="bottomDetail">
+                <div class="layui-row">
+                    <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                        <h3>已获得认证的产品</h3>
+                    </div>
+                </div>
+                <div class="dContent">
+
+                </div>
+            </div>
+        </div>
+    <!--</div>-->
+
+</body>
+
+    <script src="../../core/js/jquery-1.9.0.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../core/js/layui/layui.min.js"></script>
+    <script src="../../js/redir.js"></script>
+    <!--<script src="../../js/FECertification/details.min.js"></script>-->
+    <script src="../../js/FECertification/details.js"></script>
+</html>

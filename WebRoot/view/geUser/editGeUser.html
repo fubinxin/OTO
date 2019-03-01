@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>edit</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/core/js/layui/css/layui.css"  media="all">
+</head>
+<body>
+<form class="layui-form" action="">
+    <div>
+        <input id="id" name="id" type="hidden" />
+
+                           
+                                          
+            <div class="layui-form-item">
+                <label id="loginName_label" class="layui-form-label">登录名</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="loginName" name="loginName"  autocomplete="off" class="layui-input">
+                </div>
+            </div>
+                                        
+            <div class="layui-form-item">
+                <label id="password_label" class="layui-form-label">密码</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="password" name="password"  autocomplete="off" class="layui-input">
+                </div>
+            </div>
+                                        
+            <div class="layui-form-item">
+                <label id="role_label" class="layui-form-label">角色</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="role" name="role"  autocomplete="off" class="layui-input">
+                </div>
+            </div>
+                                        
+            <div class="layui-form-item">
+                <label id="createTime_label" class="layui-form-label">创建时间</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="createTime" name="createTime"  lay-verify="required" placeholder="please input createTime"  autocomplete="off" class="layui-input">
+                </div>
+            </div>
+                           
+        <div>
+            <button id="editConfirm" class="layui-btn layui-btn-normal" lay-submit="" lay-filter="editbtn">Confirm</button>
+            <button id="editCancel" type="layui-btn" class="layui-btn layui-btn-primary">Cancel</button>
+        </div>
+    </div>
+</form>
+</body>
+
+<script src="../../../core/js/jquery-1.9.0.min.js"></script>
+<script src="../../../core/js/i18next.js"></script>
+
+<script src="../../../js/jquery.cookie.min.js"></script>
+<script src="../../../js/language.init.js"></script>
+<script src="/core/js/layui/layui.js" charset="utf-8"></script>
+
+<script src="/js/common.js"></script>
+<script src="/js/geUser/editGeUser.js"></script>
+
+<script type="text/javascript">
+    edit.init()
+</script>
+</html>

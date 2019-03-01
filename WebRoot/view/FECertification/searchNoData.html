@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../core/js/layui/css/layui.min.css" />
+    <!--<link rel="stylesheet" href="../css/FECertification/searchNoData.min.css" />-->
+    <link rel="stylesheet" href="../css/FECertification/searchNoData.css" />
+    <title>Result Data</title>
+</head>
+
+<body>
+    <div class="layui-container-fluid">
+        <!--搜索结果导航-->
+        <div class="layui-row">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                <span class="layui-breadcrumb" lay-separator=">">
+                    <a href="#" id="_linkF">首页</a>
+                    <a href="#" id="_linkZ">资质证</a>
+                    <a href="#">搜索工程师</a>
+                </span>
+            </div>
+        </div>
+
+        <!--搜索框-->
+        <div class="layui-row">
+            <div class="searchContDiv">
+                <div class="layui-col-xs6 layui-col-sm6 layui-col-md6 layui-col-lg6">
+                    <div class="layui-row">
+                        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                            <span>
+                                <a href="#" id="ckAllCertifi">查看所有认证工程师</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="layui-row">
+                        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                            <span>
+                                <a href="#" id="clearAllCondi">清除所有筛选条件</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-xs6 layui-col-sm6 layui-col-md6 layui-col-lg6">
+                    <div class="layui-row">
+                        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                            <div class="re-search">
+                                <input id="re-searchInpMid" class="layui-input" type="search" placeholder="重新输入搜索 城市 产品型号 或 工程师姓名" />
+                                <span class="layui-icon layui-icon-search pointer"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--搜索结果-->
+        <div class="layui-row">
+            <div class="layui-col-space10">
+                <div class="layui-col-xs3 layui-col-sm3 layui-col-md3 layui-col-lg3">
+                    <div class="layui-row">
+                        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                            <span>选择筛选条件：</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="layui-row">
+                        <div class="productLi">
+                            <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                                <div class="layui-row">
+                                    <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                                        <a href="#">
+                                            <span class="layui-icon layui-icon-right"></span> 认证的产品</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-row">
+                        <div class="cityLi">
+                            <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                                <div class="layui-row">
+                                    <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                                        <a href="#">
+                                            <span class="layui-icon layui-icon-right"></span> 城市</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-xs6 layui-col-sm6 layui-col-md6 layui-col-lg6">
+                    <div class="layui-row">
+                        <div class="layui-col-sm6 layui-col-xs6 layui-col-md6 layui-col-lg6">
+                            <h4>已经认证的工程师</h4>
+                        </div>
+                        <div class="layui-col-sm6 layui-col-xs6 layui-col-md6 layui-col-lg6">
+                            <!--<h4>已经认证的工程师</h4>-->
+                            <!--分页-->
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="layui-row">
+                        <div class="certifEngineer">
+                            <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                                <div class="layui-row">
+                                    <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                                        <h2>抱歉，没有找到匹配的工程师... ...</h2>
+                                    </div>
+                                </div>
+                                <div class="layui-row">
+                                    <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                                        <h1>您可以查询以下的课程学习如何维修</h1>
+                                    </div>
+                                </div>
+                                <div class="layui-row">
+                                    <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                                        <h5>
+                                            <a href="#">Brivo315/325 课程介绍</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="layui-row">
+                                    <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                                        <h5>
+                                            <a href="#">HiSpeed 课程介绍</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="layui-row">
+                                    <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                                        <h5>
+                                            <a href="#">ProSpeed 课程介绍</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="layui-row">
+                                    <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                                        <h5>
+                                            <a href="#">了解更多... ...</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-xs3 layui-col-sm3 layui-col-md3 layui-col-lg3">
+                    <div class="layui-row">
+                        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                            <span hidden>广告图</span>
+                        </div>
+                    </div>
+                    <hr hidden>
+                    <div class="layui-row" hidden>
+                        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                            <!--<img src="../img/Contact.JPG" alt="广告">-->广告
+                        </div>
+                    </div>
+                    <div class="layui-row" hidden>
+                        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                            <!--<img src="../img/Contact.JPG" alt="广告">-->广告
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--联系我们信息-->
+        <div class="layui-row">
+            <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+                <div class="contactUsFooter">
+                    <img src="../img/connectUs.png" alt="Contact Us" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../core/js/jquery-1.9.0.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../core/js/layui/layui.min.js"></script>
+<script src="../js/redir.js"></script>
+<!--<script src="../js/FECertification/searchNoData.min.js"></script>-->
+<script src="../js/FECertification/searchNoData.js"></script>
+
+</html>

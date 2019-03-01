@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="../../core/js/layui/css/layui.min.css"/>
+	<link rel="stylesheet" href="../../sass/view/index.css" />
+	<!--<link rel="stylesheet" href="../css/FECertification/index.min.css" />-->
+	<link rel="stylesheet" href="../../css/FECertification/index.css" />
+	<link rel="stylesheet" type="text/css" href="../../Training/css/training.css"/>
+    <title>FE Certification</title>
+</head>
+
+<body>
+	
+	<div class="layui-container">
+			<div class="body">
+				<!--top header-->
+				<div class="layui-row tHeader">
+					<div class="layui-col-xs2 layui-col-sm2 layui-col-md2 layui-col-lg2 images">
+						<a href="../../view/index.html"><img class="logoImg pointer padding" src="../../img/logo.png"></a>
+					</div>
+					<div class="call">
+							<img class="pointer padding" src="../../img/callus.png">
+							<span>全国免费客户服务热线</span>
+							<br />
+							<span class="num">400-812-8188</span>
+					</div>
+					<div  class=" layui-col-xs-offset2 layui-col-xs8 layui-col-sm-offset6 layui-col-sm4 layui-col-md-offset6 layui-col-md4 layui-col-lg-offset6 layui-col-lg4 rightHeader">
+						<div class="layui-row padding">
+							<div class ="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+								<span id="language">
+									<img style="width: 20px;margin-right: 10px;" src=" ../../img/worldmap.jpg"  />
+									 中国   &nbsp;&nbsp;|&nbsp;&nbsp;  <i>简体中文</i>
+									 <br />
+									<p style="margin-top: 10px;">
+									 	<a href="https://services.gehealthcare.cn/gehcstorefront/about-us">关于我们</a>
+									 	 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+									 	<a href="https://services.gehealthcare.cn/gehcstorefront/contact/generic">联系我们</a>
+									</p>
+								</span>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<!--navbar-->
+				<div>
+					<ul class="layui-nav" lay-filter="_navDemo">
+						
+						<li class="layui-nav-item  nav">
+							<a href="https://services.gehealthcare.cn/gehcstorefront/shop">备件商店 </a>
+						</li>
+						<li class="layui-nav-item nav">
+							<a href="https://services.gehealthcare.cn/gehcstorefront/repair-solutions">维修中心</a>
+						</li>
+						<li class="layui-nav-item nav">
+							<a href="../../Training/Training.html">产品培训</a>
+						</li>
+						<li class="layui-nav-item nav">
+							<a href="#">资质证</a>
+						</li>
+						<li class="layui-nav-item nav">
+							<a href="https://services.gehealthcare.cn/gehcstorefront/support">客户支持</a>
+						</li>
+						<li class="layui-nav-item nav" style="float:right;">
+							<a href="https://services.gehealthcare.cn/gehcstorefront/customer/accountRegistration?">免费注册</a>
+							</li>
+						<li class="layui-nav-item nav" style="float: right;">
+							<a href="https://services.gehealthcare.cn/gehcstorefront/login">登录</a>
+						</li>
+					</ul>
+				</div>
+				<!--content -->
+			<div class="contents">
+				<div class="layui-container-fluid">
+		        <!--middle container-->
+		        <div class="midCan">
+		            <!--middle header-->
+		            <div class="layui-row midHeader">
+		                <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+		                    <h1 style="font-size: 0.3rem;">寻 找 维 修 工 程 师？</h1>
+		                </div>
+		            </div>
+		
+		            <!--middle search-->
+		            <div class="layui-row searchMidCanPare">
+		                <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12 searchMidCan">
+		                    <input id="searchInpMid" class="layui-input" type="search" placeholder="试试输入 城市 产品型号 或 工程师姓名" />
+		                    <span class="layui-icon layui-icon-search pointer"></span>
+		                </div>
+		            </div>
+		        </div>
+		
+		        <!--通过设备类型查找-->
+		        <div class="layui-row">
+		            <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+		                <div class="srchByDeviTitle">通过设备类型查找</div>
+		                <div class="layui-tab layui-tab-card" lay-filter="srchDevi">
+		                    <ul class="layui-tab-title srchDeviTabTitle">
+		                        
+		                    </ul>
+		                    <div class="layui-tab-content srchDeviTabCont">
+		                        
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		
+		        <!--通过地区查找-->
+		        <div class="layui-row">
+		            <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+		                <div class="srchByRegTitle">通过地区查找</div>
+		                <div class="layui-tab layui-tab-card" lay-filter="srchReg">
+		                    <ul class="layui-tab-title srchRegTabTitle">
+													
+		                    </ul>
+		                    <div class="layui-tab-content srchRegTabCont">
+													
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		
+		        <!--联系我们信息-->
+		        <div class="layui-row" style="padding-bottom: 0.3rem;">
+		            <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12">
+		                <div class="contactUsFooter">
+		                    <img src="../../img/connectUs.png" alt="Contact Us" />
+		                </div>
+		            </div>
+		        </div>
+		       
+		    </div>
+	</div>
+
+			<!--FOOTER-->
+				
+		</div>
+    
+	<div class="bottom">
+		
+	
+		<div class="layui-row fRow">
+			<div class="footer">
+			<div class="layui-col-xs2 layui-col-sm2 layui-col-md2 layui-col-lg2 part">
+				<a href="https://services.gehealthcare.cn/gehcstorefront/shop"><h4>备件商店</h4></a>
+				<ul>
+					<a href="https://services.gehealthcare.cn/gehcstorefront/c/Parts"><li>零备件</li></a>
+					<a href="https://services.gehealthcare.cn/gehcstorefront/c/Accessories"><li>配套附件及产品</li></a>
+					<!-- <a href="https://stg2-services.gehealthcare.cn/gehcstorefront/c/vsdClinicalConsumables"><li>耗材</li></a> -->
+					<a href="https://services.gehealthcare.cn/gehcstorefront/c/InstallationService"><li>零备件安装服务</li></a>
+				
+				</ul>
+			</div>
+			<div class="layui-col-xs3 layui-col-sm3 layui-col-md3 layui-col-lg3 part">
+				<a href="https://services.gehealthcare.cn/gehcstorefront/repair-solutions"><h4>维修中心</h4></a>
+				<ul>
+					<a href="https://services.gehealthcare.cn/gehcstorefront/c/InstallationService"><li>零备件安装服务</li></a>
+					
+					<a href="https://services.gehealthcare.cn/gehcstorefront/c/InstallationService"><li>单次维修服务</li></a>
+					
+				</ul>
+			</div>
+			<div class="layui-col-xs3 layui-col-sm3 layui-col-md3 layui-col-lg3 part">
+				<a href=""><h4>培训</h4></a>
+				<ul>
+					<a href=""><li>医疗客户学院</li></a>
+					<a href=""><li>课程概览</li></a>
+					<a href=""><li>年度课表</li></a>
+					<a href=""><li>我的课程</li></a>
+					<!-- <a href=""><li>资质证</li></a> -->
+				</ul>
+			</div>
+			<div class="layui-col-xs2 layui-col-sm2 layui-col-md2 layui-col-lg2 part">
+				<a href="https://services.gehealthcare.cn/gehcstorefront/support"><h4>客户支持</h4></a>
+				<ul>
+					<a href="https://services.gehealthcare.cn/gehcstorefront/part-search"><li>零备件搜索工具</li></a>
+					<a href="https://services.gehealthcare.cn/gehcstorefront/contact/generic"><li>联系我们</li></a>
+				</ul>
+			</div>
+			<div class="layui-col-xs2 layui-col-sm2 layui-col-md2 layui-col-lg2 part">
+				<img src=" ../../img/connect.png" alt="二维码" />
+
+				<p class="scan">扫一扫二维码关注我们</p>
+			</div>
+			</div>
+		</div>
+		<div class="layui-row">
+			<div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12 links">
+				
+				<a href="http://www3.gehealthcare.cn/zh-CN/">通用电气公司</a>|
+				<a href="https://services.gehealthcare.cn/hmc/medias/?context=bWFzdGVyfGltYWdlc3w2ODgyMTN8YXBwbGljYXRpb24vcGRmfGltYWdlcy9oNzEvaDBlLzg4NDM4MzYxNjIwNzgucGRmfDdkZWZkZWRjOTAzODkxM2QwYjUyNTVkOGM5NDkwZjA4MzIxNjdkZGEwMWJlNmZmNWM2MzdlYmM4ZDQ4NWFlYzc">隐私声明</a>|
+				<a href="https://services.gehealthcare.cn/hmc/medias/?context=bWFzdGVyfGltYWdlc3w2NTIxMTR8YXBwbGljYXRpb24vcGRmfGltYWdlcy9oODcvaDg1Lzg4NDIxMzg3NDY5MTAucGRmfGM5OTkyYjQ2ZjM5M2MxNDcwN2VhZjRhODAyNGQ3MDI4M2Q2OTE1ZjIxYjBmNzZmNWI5NWQ5MTBlZGRlNjRkYTk">使用条款</a>|
+				<a href="https://www.ge.com/cn/accessibility">可访问性声明</a>|
+				<a href="https://www.gehealthcare.com/ ">GE Healthcare</a>
+			</div>
+		</div>
+		<div class="layui-row">
+			<div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12 words">
+				<div class="layui-row">
+					<div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12 links details">
+							<a href="https://services.gehealthcare.cn/hmc/medias/?context=bWFzdGVyfGltYWdlc3w0Mjc1MDczfGFwcGxpY2F0aW9uL3BkZnxpbWFnZXMvaDNkL2g5YS84ODQzNjczMzA1MTE4LnBkZnw4ZGRlZTRjYWZjNDIxMTg3N2I2Nzc0NGFhYzQwN2Q2ZDYyNTJjZTg0ZTA3YzgyMTIxMWQwYTY3YmRlN2M1OWRm">GE医疗营业执照</a>|
+							<a href="https://services.gehealthcare.cn/hmc/medias/?context=bWFzdGVyfGltYWdlc3w1Mzg1OTR8YXBwbGljYXRpb24vcGRmfGltYWdlcy9oODAvaGMxLzg4NDM2NzMyNzIzNTAucGRmfDZkZDgzNTVjNDYwMjNkMzVhN2FlNzQyZDQ3MmRlZTdhOWM4MTMxOTI0ZGFkMzI2ZDcxMGM1MGQ3YTdkMDgyM2I">互联网药品信息服务证</a>|
+							<a href="#">沪ICP备11019805号-12</a>|
+							<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502003625">沪公网安备 31011502003625号</a>
+							
+						</div>
+					<div class="layui-col-xs12 layui-col-sm12 layui-col-md12 layui-col-lg12 note">
+						<p>
+							&copy; 2018 General Electric Company - All Rights Reserved. *Trademark of General Electric Company.
+						</p>
+						  
+						<p>
+						  	
+						  GE and GE Monogram are trademarks of General Eletric Company.GE HealthCare, a division of General Eletric Company
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+
+</body>
+    <script src="../../core/js/jquery-1.9.0.min.js"></script></script>
+    <script type="text/javascript" src="../../js/WapRoot.js">
+    	
+    </script>
+    <script src="../../js/redir.js"></script>
+		<script src="../../js/common.js"></script>
+    <script src="../../core/js/layui/layui.min.js"></script>
+    <!--<script src="../js/FECertification/index.min.js"></script>-->
+    <script src="../../js/FECertification/index.js"></script>
+
+</html>

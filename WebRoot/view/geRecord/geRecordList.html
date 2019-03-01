@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>查询表格</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<style>
+		.formDemo {
+			display: inline-flex;
+		}
+	</style>
+</head>
+
+<body>
+	<form class="btnAdd formDemo" lay-filter="">
+		<div class="layui-form-item">
+			<label class="layui-form-label">模块</label>
+			<div class="layui-input-inline">
+				<select class="layui-select" name="module" id="module" autocomplete="off">
+					<option value="">请选择模块</option>
+					<option value="Home">首页</option>
+					<option value="Shop">商店</option>
+					<option value="Training">培训</option>
+					<option value="FE Certification">资质证</option>
+				</select>
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">开始时间</label>
+			<div class="layui-input-inline">
+				<input type="text" class="layui-input" name="startDate" id="startDate" autocomplete="off">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">结束时间</label>
+			<div class="layui-input-inline">
+				<input type="text" class="layui-input" name="endDate" id="endDate" autocomplete="off">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<div class="layui-input-block">
+				<button class="layui-btn" lay-submit lay-filter="submitBtn" id="search">查询</button>
+			</div>
+		</div>
+	</form>
+
+	<table class="layui-hide" id="geRecordTable" lay-filter="tableFilter"></table>
+
+</body>
+<!--reqSimple -->
+<script type="text/html " id="reqSimple">
+	{{# if(d.REQUESTURL_SIMPLE==='Home'){ }}
+	<div>首页</div>
+	{{# } if(d.REQUESTURL_SIMPLE==='Shop'){ }}
+	<div>商店</div>
+	{{# } if(d.REQUESTURL_SIMPLE==='Training'){ }}
+	<div>培训</div>
+	{{# } if(d.REQUESTURL_SIMPLE==='FE Certification'){ }}
+	<div>资质证</div>
+	{{# } }}
+</script>
+<!--createTime-->
+<script type="text/html " id="createTime">
+	<div>{{formatDate(d.CREATE_TIME)}}</div>
+</script>
+
+<script src="../js/geRecord/geRecordList.js" charset="utf-8"></script>
+
+</html>
