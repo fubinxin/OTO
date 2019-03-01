@@ -1,0 +1,12 @@
+.left{
+    line-height: 30px;
+}
+.mar_Top40{
+    margin-top: 40px;
+}
+a:hover{
+    text-decoration: none;
+}
+.mar_Top40 a{
+    color: red;
+}

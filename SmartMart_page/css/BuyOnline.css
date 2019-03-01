@@ -1,0 +1,27 @@
+.height_100{
+    height:100px;
+    background: #01bdbd;
+}
+.header_title{
+    font-size: 36px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.layui-fluid{
+    padding: 0px;
+}
+.header_line{
+    width: 120px;
+    height:5px;
+    border-radius: 3px;
+    background: white;
+    margin: 0 auto;
+}
+h5{
+    color: #0C0C0C;
+}
+article>div{
+    background: #EEF0EF;
+    text-align: center;
+}
