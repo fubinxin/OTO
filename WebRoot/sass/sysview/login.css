@@ -1,0 +1,32 @@
+.login {
+  width: 20%;
+  height: 200px;
+  margin: 15% auto;
+  background-color: #005CB9;
+  padding: 20px 40px;
+  position: relative; }
+  .login #name {
+    width: 72%;
+    height: 30px; }
+  .login #password {
+    width: 72%;
+    margin-top: 10px;
+    height: 30px;
+    margin-left: 1rem; }
+  .login #submit {
+    width: 100%;
+    margin-top: 10px;
+    border: 0;
+    height: 30px; }
+  .login .loginFail {
+    display: none;
+    width: 100px;
+    height: 60px;
+    background-color: rgba(128, 128, 128, 0.8);
+    top: 90px;
+    left: 40%;
+    position: absolute;
+    z-index: 11;
+    text-align: center; }
+    .login .loginFail .msg {
+      color: white; }

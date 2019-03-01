@@ -1,0 +1,63 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-size: 0.14rem;
+}
+.layui-nav li a,.layui-icon,.layui-breadcrumb>*{
+	font-size: 0.14rem!important;
+}
+.layui-tab{
+	margin: 0.01rem 0;
+}
+.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after{
+	height: 0.05rem!important;
+}
+body {
+	background: rgb(235, 233, 234);
+	.body {
+		background: #FFFFFF;
+		.tHeader {
+			width: 94%;
+			margin-left: 3%;
+			line-height: 0;
+			.logoImg {
+				margin-top: 5%;
+				width: 1.95rem;
+			}
+			.qrNumDiv {
+				display: flex;
+				line-height: 0.55rem;
+			}
+			.cPhoneNum {
+				color: rgb(0, 92, 185);
+			}
+			.qrCodeImg {
+				width: 0.55rem;
+				height: 0.55rem;
+			}
+			.padding {
+				padding: 0.13rem 0;
+			}
+			.rightHeader {
+				text-align: right;
+			}
+		}
+		.layui-nav {
+			width: 94%;
+			margin-left: 3%;
+			padding: 0;
+			background: #005CB9;
+		}
+		.layui-nav .layui-this:after,
+		.layui-nav-bar,
+		.layui-nav-tree .layui-nav-itemed:after {
+			background-color: #FFFFFF;
+		}
+		.layui-nav .layui-nav-item {
+			line-height: 0.4rem;
+		}
+	}
+	.pointer {
+		cursor: pointer;
+	}
+}

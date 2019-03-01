@@ -1,0 +1,64 @@
+.layui-nav-tree{
+  background-color: #005CB9;
+
+  .logo{
+    width:100%;
+    height:63px;
+    margin-bottom: 40px;
+    background-color: white;
+  }
+  .layui-this a{
+    background-color: rgb(62,156,222);
+  }
+}
+.header{
+  height:42px;
+  width:100%;
+  margin-top: 20px;
+  border-bottom: 1px solid #b2b2b2;
+
+  .curPage{
+    margin-left:40px;
+    font-weight: bold;
+    display:inline-block;
+    vertical-align: middle;
+  }
+  .logout{
+    float:right;
+    display:inline-block;
+    margin-right:20px;
+    vertical-align: middle;
+  }
+  .user{
+    float:right;
+    display:inline-block;
+    margin-right:20px;
+    vertical-align: middle;
+  }
+}
+
+@mixin display($a:flex,$justCont:flex-end){
+  @if($a){
+  display: flex;
+  justify-content: $justCont;
+  }@else{
+    display: $a;
+  }
+}
+
+@mixin padding($params){
+  padding: $params;
+}
+
+.layui-fluid{
+  .btnAdd{
+    margin-top: 20px;
+  }
+}
+
+.btnGroup{
+  @include display(flex,center);
+}
+.formItemGroup{
+  @include padding(20px);
+}
