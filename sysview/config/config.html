@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Config</title>
+</head>
+<body>
+    <!-- <div class="btnR" style="margin-top: 40px;float:right">
+        <button class="layui-btn layui-btn-normal layui-btn-sm" id="btnAddConfig">
+            <i class="layui-icon">&#xe654;</i>添加</button>
+        <button class="layui-btn layui-btn-normal layui-btn-sm" id="btnDelConfig">
+            <i class="layui-icon">&#xe640;</i>多项删除</button>
+    </div> -->
+    <button class="layui-btn layui-bg-red layui-btn-sm btnAdd" id="btnAddConfig">
+        <i class="layui-icon">&#xe654;</i>添加</button>
+    <button class="layui-btn layui-btn-normal layui-btn-sm btnAdd" id="btnDelConfig">
+        <i class="layui-icon">&#xe640;</i>批量删除</button>
+<table id="config" lay-filter="config" style="width:100%"></table>
+</body>
+<script src="../js/sysview/config/config.js"></script>
+<script type="text/html" id="barDemo">
+    <button class="layui-btn layui-btn-normal layui-btn-sm" lay-event="edit"><i class="layui-icon">&#xe642;</i></button>
+    <button class="layui-btn layui-btn-normal layui-btn-sm" lay-event="del"><i class="layui-icon">&#xe640;</i></button>
+</script>
+<script type="text/html" id="type">
+  {{#  if(d.settop == 2){ }}
+    <div>否</div> 
+  {{#  } else if(d.settop == 1) { }}
+    <div>是</div>
+  {{#  } else { }}
+    <div></div>
+  {{#  }  }}
+</script>
+<script type="text/html" id="img">
+	{{# var _img = ['.png', '.jpg', '.gif', '.jpeg'],_video = ['.mp4', '.rmvb', '.avi', '.ts']; }}
+	{{# layui.each(_img, function (index, item) {
+				if ((d.imgPath).indexOf(item) > 0) {
+	}}
+	<img src={{d.imgPath}} />
+	{{# return; } }) }}
+					
+	{{# layui.each(_video, function (index, item) {
+				if ((d.imgPath).indexOf(item) > 0) { }}
+	<video src={{d.imgPath}} controls="controls"></video>
+	{{# return; } }) }}
+	<div></div>
+</script>
+</html>

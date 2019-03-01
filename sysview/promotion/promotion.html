@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Config</title>
+</head>
+<body>
+   <!--  <div class="btnR" style="margin-top: 40px;float:right">
+        <button class="layui-btn layui-btn-normal layui-btn-sm" id="btnAddPromotion">
+            <i class="layui-icon">&#xe654;</i>添加</button>
+        <button class="layui-btn layui-btn-normal layui-btn-sm" id="btnDelPromotion">
+            <i class="layui-icon">&#xe640;</i>多项删除</button>
+    </div> -->
+    <button class="layui-btn layui-bg-red layui-btn-sm btnAdd" id="btnAddPromotion">
+        <i class="layui-icon">&#xe654;</i>添加</button>
+    <button class="layui-btn layui-btn-normal layui-btn-sm btnAdd" id="btnDelPromotion">
+        <i class="layui-icon">&#xe640;</i>批量删除</button>
+<table id="promotion" lay-filter="promotion" style="width:100%"></table>
+</body>
+
+<script type="text/html" id="barDemo">
+    <button class="layui-btn layui-btn-normal layui-btn-sm" lay-event="edit"><i class="layui-icon">&#xe642;</i></button>
+    <button class="layui-btn layui-btn-normal layui-btn-sm" lay-event="del"><i class="layui-icon">&#xe640;</i></button>
+</script>
+<script type="text/html" id="settop">
+  {{#  if(d.settop == 2){ }}
+    <div>否</div> 
+  {{#  } else if(d.settop == 1) { }}
+    <div>是</div>
+  {{#  } else { }}
+    <div></div>
+  {{#  }  }}
+</script>
+<script type="text/html" id="img">
+     <img src={{d.imgPath}} />
+</script>
+<script type="text/html" id="type">
+    <div>{{formatCategory(d.categoryid)}}</div>
+</script>
+<script>
+    //产品分类list
+    var formatC = {};
+    var flag = false;
+
+    $.ajax({
+        url: url + "/geCategory/get_category?categoryId=17",
+        type: "get",
+        dataType: "json",
+        success: function (res) {
+            if (res.status === 200) {
+                if (res.data != null) {
+                    formatC = res.data;
+                }
+            }
+        },
+        error: function (msg) {
+            console.log(msg)
+        }
+    })
+
+    var formatCategory = function (category) {
+        for (var i = 0; i < formatC.length; i++) {
+            if (parseInt(category) === formatC[i].id) {
+                flag = true;
+                return formatC[i].name;
+            }
+        }
+
+        if (flag) {
+            return '';
+        }
+    }
+</script>
+<script src="../js/sysview/promotion/promotion.js"></script>
+<!-- <script>
+  var formatCategory=function(category){
+   $.ajax({
+                url:url+'/geCategory/get_category?categoryId=17',
+                type:'get',
+                data:{},
+                dataType:'json',
+                success:function(data){
+                    layui.each(data.data,function(index,item){
+                      console.log(item.name);
+                      if(item.id === category){    
+                         return item.name;
+                   
+                    }else{                          
+                        return '';
+                }
+                  })
+
+                }
+            })
+  }
+ 
+</script> -->
+</html>

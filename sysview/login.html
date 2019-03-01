@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../sass/sysview/login.css">
+</head>
+<body>
+<div class="login">
+    <h4>GE OTO Login</h4>
+    <span>用户名：</span><input type="text" id="name" placeholder="Name">
+    <br>
+    <span class="text">密码：</span><input type="password" id="password" placeholder="Password">
+    <br>
+    <input type="button" value="登录" id="submit">
+    <div class="loginFail">
+        <p class="msg">用户名或密码错误</p>
+    </div>
+</div>
+
+<script src="../core/js/jquery-1.9.0.min.js" type="text/javascript"></script>
+<script src="../core/js/jquery.cookie.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/sysview/login.js"></script>
+</body>
+</html>
