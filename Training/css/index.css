@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 0.14rem;
+   }
+.layui-nav .layui-nav-item a{
+		padding: 0 0.15rem !important;
+}
+.layui-nav li a, .layui-icon, .layui-breadcrumb > * {
+  font-size: 0.14rem !important;
+ }
+
+.layui-tab {
+  margin: 0.01rem 0;
+   }
+
+.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after {
+  height: 0.05rem !important;
+   }
+
+body {
+  background: #ebe9ea;
+   }
+body .body {
+  background: #FFFFFF; 
+  }
+body .body .tHeader {
+      width: 94%;
+      margin-left: 3%;
+      line-height: 0;
+        padding-bottom: 0.2rem ;
+ }
+body .body .tHeader .logoImg {
+    margin-top: 0.4rem;
+    width: 3.3rem;
+    height: 0.6rem;
+     }
+body .body .tHeader .qrNumDiv {
+        display: flex;
+        line-height: 0.55rem; }
+body .body .tHeader .cPhoneNum {
+        color: #005cb9;
+         }
+body .body .tHeader .qrCodeImg {
+        width: 0.55rem;
+        height: 0.55rem;
+         }
+body .body .tHeader .padding {
+       
+         }
+body .body .tHeader .rightHeader {
+        text-align: right; }
+body .body .layui-nav {
+      width: 94%;
+      margin-left: 3%;
+      padding: 0;
+      background: #005CB9; }
+body .body .layui-nav .layui-this:after,
+body .body .layui-nav-bar,
+body .body .layui-nav-tree .layui-nav-itemed:after {
+      background-color: #FFFFFF; }
+body .body .layui-nav .layui-nav-item {
+      line-height: 0.4rem; }
+body .pointer { cursor: pointer; }
+.login{
+		width: 40%;
+    float: right;
+    margin-top: -40px;
+    text-align: right;
+
+}
+.rightHeader{    
+	position: absolute;
+  right: 0.5rem;
+  width: 90%;
+  margin-top: 0.15rem;
+    
+    
+    }
+.tHeader .images{display: flex;width: 100%;}
+.tHeader .call{
+		margin-top: 0.40rem;
+    position: absolute;
+    right: 0.5rem;
+    padding: 0;
+}
+.tHeader .call img{
+	width: 0.3rem;
+  margin-top: 0.15rem;
+}
+.call .num{
+	   font-size: 0.2rem;
+    color: #005CB9;
+    /* margin-right: 0.13rem; */
+    /* text-align: right; */
+    margin-left: 0.335rem;
+    position: absolute;
+    margin-top: -0.05rem;
+    letter-spacing: 0.013rem;
+}
