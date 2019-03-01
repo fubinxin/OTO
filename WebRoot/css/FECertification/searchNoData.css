@@ -1,0 +1,71 @@
+﻿/* 设置滚动条的样式 */
+.layui-container-fluid {
+  margin: 0.8% 3% 0;
+}
+.layui-container-fluid .searchContDiv {
+  margin: 1% 0;
+}
+.layui-container-fluid .searchContDiv > div span {
+  line-height: 0.4em;
+}
+.layui-container-fluid .searchContDiv > div span a:hover {
+  color: red;
+}
+.re-search {
+  width: 100%;
+  display: inline-flex;
+  border: 0.01rem solid black;
+}
+.re-search span {
+  margin: 0.2rem;
+  color: dodgerblue;
+  line-height: 0.5rem;
+}
+.re-search input {
+  border: none;
+  font-size: 0.14rem;
+  height: 0.5rem!important;
+}
+.productLi a {
+  line-height: 1.5em;
+}
+.productLi ul li {
+  margin-left: 0.15rem;
+  display: inline-flex;
+}
+.productLi ul li a {
+  line-height: 1.5em;
+}
+.cityLi {
+  margin-top: 0.1rem;
+}
+.cityLi a {
+  line-height: 1.5em;
+}
+.cityLi ul li {
+  margin-left: 0.15rem;
+  display: inline-flex;
+}
+.cityLi ul li a {
+  line-height: 1.5em;
+}
+.certifEngineer .layui-row h2 {
+  color: red;
+  text-align: left;
+  line-height: 2em;
+}
+.certifEngineer .layui-row h1 {
+  line-height: 3em;
+  text-align: left;
+}
+.certifEngineer .layui-row h5 {
+  margin: 0.08rem;
+  text-decoration: underline;
+}
+.contactUsFooter {
+  margin-top: 1em;
+}
+.contactUsFooter img {
+  width: 100%;
+  height: auto;
+}

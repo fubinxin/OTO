@@ -1,0 +1,85 @@
+﻿.layui-container-fluid {
+  margin: 0.8% 3% 0;
+}
+.layui-container-fluid .midCan {
+  height: 3rem;
+  background: dodgerblue;
+}
+.layui-container-fluid .midHeader {
+  text-align: center;
+  color: #FFFFFF;
+}
+.layui-container-fluid .midHeader h1 {
+  margin-top: 0.6rem;
+  margin-bottom: -0.6rem;
+}
+.layui-container-fluid .searchMidCanPare {
+  position: absolute;
+  margin-top: 0.8rem;
+  left: 30%;
+  width: 40%;
+}
+.layui-container-fluid .searchMidCan {
+  width: 100%;
+  height: auto;
+  line-height: 0.38rem;
+  justify-content: space-between;
+  display: flex;
+  background: #FFFFFF;
+}
+.layui-container-fluid .searchMidCan span {
+  margin: 0.06rem;
+  color: dodgerblue;
+}
+.layui-container-fluid .searchMidCan input {
+  border: none;
+  font-size: 0.14rem;
+  height: 0.5rem!important;
+}
+.layui-container-fluid .srchByDeviTitle {
+  background: #51a9ff;
+  padding: 0.1rem;
+  color: white;
+  margin-top: 0.1rem;
+}
+.layui-container-fluid .srchDeviTabCont ul li {
+  display: inline-flex;
+}
+.layui-container-fluid .srchDeviTabCont ul li a ul li {
+  display: block;
+  text-align: center;
+  padding: 0.02rem;
+}
+.layui-container-fluid .srchDeviTabCont ul li a ul li img {
+  width: 1rem;
+  height: auto;
+}
+.layui-container-fluid .srchDeviTabCont ul li a ul:hover {
+  border: 1px solid black;
+}
+.layui-container-fluid .srchByRegTitle {
+  background: #51a9ff;
+  padding: 0.1rem;
+  color: white;
+  margin-top: 0.1rem;
+}
+.layui-container-fluid .srchRegTabCont ul li {
+  display: inline-flex;
+}
+.layui-container-fluid .srchRegTabCont ul li a {
+  text-align: center;
+  padding: 0.02rem;
+  text-decoration: underline;
+}
+.layui-container-fluid .srchRegTabCont ul li a:hover {
+  color: red;
+}
+.layui-container-fluid .contactUsFooter {
+  margin-top: 0.09rem;
+}
+.layui-container-fluid .contactUsFooter img {
+  width: 100%;
+}
+.layui-container-fluid .pointer {
+  cursor: pointer;
+}

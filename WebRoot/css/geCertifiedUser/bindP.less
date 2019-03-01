@@ -1,0 +1,34 @@
+﻿.padding(@padding:5px){
+	padding: @padding;
+}
+
+.color(@color:#000000){
+	color: @color;
+}
+
+.font-size(@fontSize:14px){
+	font-size: @fontSize;
+}
+
+.formItemGroup{
+	tr{
+		td{
+			input{
+				border: none;
+				.padding(3%);
+			}
+			
+			select{
+				border: none;
+				.padding(3%);
+			}
+				
+			input[disabled='disabled']{
+				background: #FFFFFF;
+			}
+			
+			text-align: center;
+		}
+	}
+}
+

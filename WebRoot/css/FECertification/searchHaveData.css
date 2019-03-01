@@ -1,0 +1,69 @@
+.layui-container-fluid {
+  margin: 0.8% 3% 0;
+}
+.layui-container-fluid .searchContDiv {
+  margin: 1% 0;
+}
+.layui-container-fluid .searchContDiv > div span {
+  line-height: 0.4em;
+}
+.layui-container-fluid .searchContDiv > div span a:hover {
+  color: red;
+}
+.re-search {
+  width: 100%;
+  display: inline-flex;
+  border: 0.01rem solid black;
+}
+.re-search span {
+  margin: 0.2rem;
+  color: dodgerblue;
+  line-height: 0.5rem;
+}
+.re-search input {
+  border: none;
+  font-size: 0.14rem;
+  height: 0.5rem!important;
+}
+.productLi a {
+  line-height: 2em;
+}
+.productLi input[type="checkbox"] {
+  width: 1em;
+  height: 1.5em;
+  font-size: 0.15px;
+}
+.productLi .layui-row {
+  text-align: left;
+}
+.cityLi {
+  margin-top: 0.1rem;
+}
+.cityLi a {
+  line-height: 2em;
+}
+.cityLi input[type="checkbox"] {
+  width: 1em;
+  height: 1.5em;
+  font-size: 0.15px;
+}
+.cityLi .layui-row {
+  text-align: left;
+}
+.certifEngineer {
+  text-align: center;
+}
+.certifEngineer img {
+  width: 100%;
+}
+#engineerPag {
+  line-height: 5;
+}
+.contactUsFooter {
+  margin-top: 1em;
+  margin-bottom: 0.3rem;
+}
+.contactUsFooter img {
+  width: 100%;
+  height: auto;
+}

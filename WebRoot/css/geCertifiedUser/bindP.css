@@ -1,0 +1,14 @@
+﻿.formItemGroup tr td {
+  text-align: center;
+}
+.formItemGroup tr td input {
+  border: none;
+  padding: 3%;
+}
+.formItemGroup tr td select {
+  border: none;
+  padding: 3%;
+}
+.formItemGroup tr td input[disabled='disabled'] {
+  background: #FFFFFF;
+}
